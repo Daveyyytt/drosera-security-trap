@@ -1,0 +1,17 @@
+ethereum_rpc = "https://rpc.hoodi.ethpandaops.io/"
+drosera_rpc = "https://relay.hoodi.drosera.io"
+eth_chain_id = 560048
+drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
+
+[traps.buffer_underflow_monitor]
+address = "0x880E1C0FC83A17017Ed3834D51dd034361A80ea7"
+path = "out/BufferUnderflowTrap.sol/BufferUnderflowTrap.json"
+response_contract = "0x1002e019E1b4601cd7bC8314128A4DF70110cEb0"
+response_function = "triggerResponse()"
+cooldown_period_blocks = 50
+min_number_of_operators = 1
+max_number_of_operators = 3
+block_sample_size = 1
+private = true
+private_trap = true
+whitelist = ["0x3538b96e3f6199Ba2a320F523f091c095616ccdf"]
